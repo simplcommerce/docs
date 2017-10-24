@@ -3,4 +3,5 @@ pages:
 - Introduction: index.md
 - Getting Started: getting-started.md
 theme: readthedocs
+repo_url: https://github.com/simplcommerce/docs/
 
