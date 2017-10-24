@@ -1,5 +1,6 @@
-site_name: SimplCommerce Documentation
+site_name: SimplCommerce Docs
 pages:
-- Getting Started: getting_started.md
+- Introduction: index.md
+- Getting Started: getting-started.md
 theme: readthedocs
 
