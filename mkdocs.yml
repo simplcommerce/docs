@@ -1,7 +1,5 @@
-site_name: Sample Documentation
+site_name: SimplCommerce Documentation
 pages:
-- Heapster Overview: index.md
-- Model: model.md
-- Source Configuration: source-configuration.md
+- Getting Started: getting_started.md
 theme: readthedocs
 
