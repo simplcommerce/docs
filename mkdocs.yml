@@ -4,4 +4,5 @@ pages:
 - Getting Started: getting-started.md
 theme: readthedocs
 repo_url: https://github.com/simplcommerce/docs/
+edit_uri: blob/master/docs/
 
