@@ -1,7 +1,10 @@
 # Introduction to SimplCommerce
 
 SimplCommerce is a simple, cross platform, modularized ecommerce system built on .NET Core.
-It is built based on:
+
+---
+
+SimplCommerce is built based on:
 
 - ASP.NET MVC Core 2.0.0 on .NET Core 2.0.0
 - Entity Framework Core 2.0.0
