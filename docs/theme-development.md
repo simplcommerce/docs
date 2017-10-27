@@ -1,3 +1,7 @@
+# Theme development
+
+---
+
 ## Steps to create a new theme
 - Create a folder SimplCommerce.WebHost/Themes/[YourThemeName]. The theme name should be in PascalCase, no spacing.
 - Create a theme.json file in your newly created folder

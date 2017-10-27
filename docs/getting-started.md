@@ -1,7 +1,10 @@
+# Getting Started
+
+---
+
 ## Docker
 - First run the database: `docker run --name simpldb -d postgres`
 - Then run the app: `docker run --name simplsite -d -p 5000:5000 --link simpldb:simpldb simplcommerce/nightly-build`
-
 
 ## Visual Studio 2017 and SQL Server
 

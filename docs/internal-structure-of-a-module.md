@@ -1,4 +1,8 @@
-[[/images/module-internal.png|Internal module structure]]
+# Internal structure of a module
+
+---
+
+![Internal module structure](images/module-internal.png)
 
 The structure of a module is very straightforward. We just want to highlight some important notes below:
 

@@ -1,3 +1,7 @@
+# How to add new modules
+
+---
+
 In visual studio, right click on the solution choose add new project. In the Add New Project dialog choose ASP.NET Core Web Application. Naming the module as xxx.Module.yyy, the location should be in src\Modules.
 
 After the project has created. Right click on project name choose Edit xxx.Module.yyy.csproj, then replace all entire the csproj with the content below
