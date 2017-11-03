@@ -1,4 +1,7 @@
 site_name: SimplCommerce Docs
+theme: readthedocs
+repo_url: https://github.com/simplcommerce/docs
+google_analytics: ['UA-78132767-3', 'docs.simplcommerce.com']
 pages:
 - Introduction: index.md
 - Getting started: getting-started.md
@@ -8,7 +11,6 @@ pages:
 - How to add new lanuages: how-to-add-new-languages.md
 - Theme development: theme-development.md
 - Widgets: widgets.md
-theme: readthedocs
-repo_url: https://github.com/simplcommerce/docs/
-google_analytics: ['UA-78132767-3', 'docs.simplcommerce.com']
+- How to use StorageAmazonS3 module: amazon-s3.md
+
 
