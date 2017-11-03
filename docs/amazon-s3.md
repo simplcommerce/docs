@@ -15,15 +15,16 @@ Add the following configuration below to the appsettings.json
 ```json
   "AWS": {
     "S3": {
-      "RegionEndpointName": "<region name>",
+      "RegionEndpointName": "<Region name>",
       "AccessKeyId": "<Your access key>",
       "SecretAccessKey": "<Your secret key>",
-      "BucketName": "<Your bucket name>"
+      "BucketName": "<Your bucket name>",
+      "PublicEndpoint" <Optional >
     }
   }
 ```
 
-Then update the these configuration values according to your aws settings.
+Then update the these configuration values according to your aws settings. For use in production, we recommend that the bucket should be served via CloudFront CDN. Then in that case, add your cloudfront domain to the PublicEndpoint.
 
 Note: If you like you can add these setting to the Core_AppSettings table instead.
 
