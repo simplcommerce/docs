@@ -9,7 +9,7 @@ pages:
 - Internal structure of a module: internal-structure-of-a-module.md
 - How to add new modules: how-to-add-new-modules.md
 - How to add new payment providers: how-to-add-new-payment-providers.md
-- How to add new lanuages: how-to-add-new-languages.md
+- How to add new languages: how-to-add-new-languages.md
 - Theme development: theme-development.md
 - Widgets: widgets.md
 - How to use StorageAmazonS3 module: amazon-s3.md
