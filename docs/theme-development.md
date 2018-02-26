@@ -14,7 +14,7 @@
   "version": "1.0.0"
 }
 ```
-- In your theme folder, create Views/Shared/_Layout.cshtml, this is the layout of your theme. You can copied the existing _Layout.cshtml then modify it. You can add your custom style sheet or change the html structure.
+- In your theme folder, create Views/Shared/_Layout.cshtml, this is the layout of your theme. You can copy the existing _Layout.cshtml then modify it. You can add your custom style sheet or change the html structure.
 
 - If you want to change the html structure of some particular views. Then following the origin views' structure, create your own views. The other will fallback to the origin views.  Please check out the SampleTheme. 
 
