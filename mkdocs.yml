@@ -14,5 +14,6 @@ pages:
 - Theme development: theme-development.md
 - Widgets: widgets.md
 - How to use StorageAmazonS3 module: amazon-s3.md
+- Some notes for exporting PDF: notes-for-export-pdf.md
 
 
