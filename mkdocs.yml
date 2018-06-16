@@ -5,6 +5,7 @@ google_analytics: ['UA-78132767-3', 'docs.simplcommerce.com']
 pages:
 - Introduction: index.md
 - Getting started: getting-started.md
+- Working with different databases: working-with-databases.md
 - Development tips: development-tips.md
 - Internal structure of a module: internal-structure-of-a-module.md
 - How to add new modules: how-to-add-new-modules.md
