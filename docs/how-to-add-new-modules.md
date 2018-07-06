@@ -2,7 +2,7 @@
 
 ---
 
-In visual studio, right click on the solution choose add new project. In the Add New Project dialog choose ASP.NET Core Web Application. Naming the module as xxx.Module.yyy, the location should be in src\Modules.
+In Visual Studio, right click on the solution choose add new project. In the Add New Project dialog choose ASP.NET Core Web Application. Naming the module as xxx.Module.yyy, the location should be in src\Modules.
 
 After the project has created. Right click on project name choose Edit xxx.Module.yyy.csproj, then replace all entire the csproj with the content below
 
@@ -10,7 +10,7 @@ After the project has created. Right click on project name choose Edit xxx.Modul
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <PreserveCompilationContext>false</PreserveCompilationContext>
     <EnableDefaultContentItems>false</EnableDefaultContentItems>
     <OutputType>Library</OutputType>
@@ -30,9 +30,12 @@ Delete 2 files: Program.cs and Startup.cs then add a new file call "module.json"
 {
   "name": "yyy",
   "fullName": "xxx.Module.yyy",
+  "isBundledWithHost": true,
   "version": "1.0.0"
 }
 ```
+
+If you set isBundledWithHost to true. Then you need to add project reference to your module in the SimplCommerce.WebHost.
 
 Congratulations, your module is ready and you can start adding module code.
 
