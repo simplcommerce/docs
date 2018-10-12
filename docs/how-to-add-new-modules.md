@@ -7,13 +7,9 @@ In Visual Studio, right click on the solution choose add new project. In the Add
 After the project has created. Right click on project name choose Edit xxx.Module.yyy.csproj, then replace all entire the csproj with the content below
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk.Web">
-
+<Project Sdk="Microsoft.NET.Sdk.Razor">
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
     <PreserveCompilationContext>false</PreserveCompilationContext>
-    <EnableDefaultContentItems>false</EnableDefaultContentItems>
-    <OutputType>Library</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,18 +20,20 @@ After the project has created. Right click on project name choose Edit xxx.Modul
 </Project>
 ```
 
-Delete 2 files: Program.cs and Startup.cs then add a new file call "module.json" with the following structure
+Add a new file call "module.json" with the following structure
 
 ```json
 {
-  "name": "yyy",
-  "fullName": "xxx.Module.yyy",
+  "id": "xxx.Module.yyy",
+  "Name": "Your module name",
   "isBundledWithHost": true,
   "version": "1.0.0"
 }
 ```
 
 If you set isBundledWithHost to true. Then you need to add project reference to your module in the SimplCommerce.WebHost.
+
+Register your module in SimplCommerce.WebHost/modules.json so that it will be copied to the WebHost on build
 
 Congratulations, your module is ready and you can start adding module code.
 
