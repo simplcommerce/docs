@@ -34,21 +34,18 @@ By default, simplcommerce using StorageLocal module and store the media in the l
 
 The current workaround is:
 
-- Delete the module.json in the SimplCommerce.Module.StorageLocal. So that it isn't copied to the Host when build
-- Create a module.json in the SimplCommerce.Module.StorageAmazonS3 with the content below.
+In the SimplCommerce.WebHost.csproj replace 
 
-```json
-{
-  "name": "storageAmazonS3",
-  "fullName": "SimplCommerce.Module.StorageAmazonS3",
-  "version": "1.0.0"
-}
+```xml
+<ProjectReference Include="..\Modules\SimplCommerce.Module.StorageLocal\SimplCommerce.Module.StorageLocal.csproj" />
 ```
 
+by
+
+```xml
+<ProjectReference Include="..\Modules\SimplCommerce.Module.StorageAmazonS3\SimplCommerce.Module.StorageAmazonS3.csproj" />
+```
+
+And also replace the module SimplCommerce.Module.StorageLocal to SimplCommerce.Module.StorageAmazonS3 in modules.json in the WebHost
+
 - Build the solution then enjoy.
-
-
-
-
-
-
