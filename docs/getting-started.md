@@ -17,6 +17,7 @@ For testing purpose only `docker run -p 5000:80 simplcommerce/ci-build`
 
 - Update the connection string in appsettings.json in SimplCommerce.WebHost
 - Build whole solution.
+- Make sure your startup project is SimplCommerce.Webhost(Right-click on SimpleCommerce.Webhost and select "Set as startup project").     Otherwise the next step will fail with a dbcontext missing error. 
 - Open Package Manager Console Window and type "Update-Database" then press "Enter". This action will create database schema.
 - In Visual Studio, press "Control + F5".
 - The back-office can access via /Admin using the pre-created account: admin@simplcommerce.com, 1qazZAQ!
