@@ -2,7 +2,7 @@
 
 ---
 
-Although the admin side is written as a Single Page Application with Angular, we chose cookies for authentication and simplicity.
+Although the admin side is written as a Single Page Application with Angular, we chose cookies authentication for simplicity.
 
 Recently we support a very simple token authentication method which you can use to call APIs, such as 'add products', 'categories', etc..
 
