@@ -6,12 +6,12 @@ SimplCommerce is a simple, cross platform, modularized ecommerce system built on
 
 ## SimplCommerce is built based on:
 
-- ASP.NET MVC Core 2.1
-- Entity Framework Core 2.1
-- ASP.NET Identity Core 2.1
+- ASP.NET MVC Core 2.2
+- Entity Framework Core 2.2
+- ASP.NET Identity Core 2.2
 - Autofac 4.2.0
 - Angular 1.6.3
-- MediatR 3.0.1 for domain event
+- MediatR 6.0.0 for domain event
 
 ## The architecture highlight
 
