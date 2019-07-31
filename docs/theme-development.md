@@ -2,7 +2,7 @@
 
 ---
 
-It is very easy to develop a new theme in SimplCommerce. You don't need to instsall any thing to develop and test your theme. All you need is download the latest release of SimplCommerce at https://github.com/simplcommerce/SimplCommerce/releases. Depend on your OS, 
+It is very easy to develop a new theme in SimplCommerce. You don't need to install any thing to develop and test your theme. All you need is to download the latest release of SimplCommerce at https://github.com/simplcommerce/SimplCommerce/releases. Depends on your OS, 
 pick a Windows or Mac version, extract the zip file, run the app by click on SimplCommerce.WebHost.exe (Windows), or type the './SimplCommerce.WebHost' in the Terminal and hit Enter (Mac).
 
 Of course, you can run the full source code with .NET Core SDK for advanced debuging.
