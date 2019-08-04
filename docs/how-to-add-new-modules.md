@@ -35,6 +35,8 @@ If you set isBundledWithHost to true. Then you need to add project reference to 
 
 Register your module in SimplCommerce.WebHost/modules.json so that it will be copied to the WebHost on build
 
+Add a new file call ModuleInitializer.cs and implement IModuleInitializer interface. This file is the place where you will register services and middlewares of your module
+
 Congratulations, your module is ready and you can start adding module code.
 
 ## Adding Angular module
@@ -43,6 +45,6 @@ In the project folder/wwwroot/admin/ create your angular module. You can copy th
 
 Create controllers, views, service for your module.
 
-Register your js files by adding them to the SimplCommerce.Module.Core/Views/HomeAdmin/Index.cshtml
+Add a new file call bundleconfig.json and register your javascript, css files
 
-Register your angular module to the SimplCommerce.Module.Core/wwwroot/admin/admin-app.js
+Register your angular module by adding `GlobalConfiguration.RegisterAngularModule("yourAngularModuleName");` to the ConfigureServices in ModuleInitializer
