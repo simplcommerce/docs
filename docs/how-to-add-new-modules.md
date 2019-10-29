@@ -8,9 +8,6 @@ After the project has created. Right click on project name choose Edit xxx.Modul
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Razor">
-  <PropertyGroup>
-    <PreserveCompilationContext>false</PreserveCompilationContext>
-  </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\SimplCommerce.Infrastructure\SimplCommerce.Infrastructure.csproj" />
