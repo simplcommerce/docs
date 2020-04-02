@@ -11,7 +11,7 @@ For testing purpose only `docker run -p 5000:80 simplcommerce/ci-build`
 #### Prerequisites
 
 - SQL Server
-- [Visual Studio 2019 version >= 16.3 with .NET Core SDK 3.0](https://www.microsoft.com/net/download/all)
+- [Latest visual Studio 2019 (version >= 16.4) with .NET Core SDK 3.1](https://www.microsoft.com/net/download/all)
 
 #### Steps to run
 
@@ -27,7 +27,7 @@ For testing purpose only `docker run -p 5000:80 simplcommerce/ci-build`
 #### Prerequisite
 
 - PostgreSQL
-- [.NET Core SDK 3.0](https://www.microsoft.com/net/download/all)
+- [.NET Core SDK 3.1](https://www.microsoft.com/net/download/all)
 
 #### Steps to run
 

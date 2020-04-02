@@ -6,9 +6,9 @@ SimplCommerce is a simple, cross platform, modularized ecommerce system built on
 
 ## SimplCommerce is built based on:
 
-- ASP.NET MVC Core 3.0
-- Entity Framework Core 3.0
-- ASP.NET Identity Core 3.0
+- ASP.NET MVC Core 3.1
+- Entity Framework Core 3.1
+- ASP.NET Identity Core 3.1
 - Angular 1.6.3
 - MediatR 7.0.0 for domain event
 
@@ -18,9 +18,9 @@ SimplCommerce is a simple, cross platform, modularized ecommerce system built on
 
 The application is divided into modules. Each module contains all the stuff for itself to run including Controllers, Services, Views and even static files. If a module is no longer need, you can simply just delete it by a single click.
 
-The SimplCommerce.WebHost is the ASP.NET Core project and acts as the host. It will bootstrap the app and load all the modules it found in the [modules.json](https://github.com/simplcommerce/SimplCommerce/blob/master/src/SimplCommerce.WebHost/modules.json). The source code of modules are placed outside the WebHost, in the [/src/Modules folder](https://github.com/simplcommerce/SimplCommerce/tree/master/src/Modules). In the WebHost, there is a custom MSBuild task call 'CopyModule' which will be call after the build event to copy the build output of modules to the WebHost.
+The SimplCommerce.WebHost is the ASP.NET Core project and acts as the host. It will bootstrap the app and load all the modules it found in the [modules.json](https://github.com/simplcommerce/SimplCommerce/blob/master/src/SimplCommerce.WebHost/modules.json). The source code of modules are placed outside the WebHost, in the [/src/Modules folder](https://github.com/simplcommerce/SimplCommerce/tree/master/src/Modules). .
 
-During the application startup, the host will scan for all the *.dll in the Modules folder and load them up using AssemblyLoadContext. These assemblies will be then registered to MVC Core by the AddApplicationPart method.
+During the application startup, the host will look up the modules.json and load all the modules it found in that file. If the module is not bundled with the Host then it will scan for all the *.dll in that Modules folder and load them up using AssemblyLoadContext. These assemblies will be then registered to MVC Core by the AddApplicationPart method.
 
 A ModuleViewLocationExpander is implemented to help the ViewEngine can find the right location for views in modules.
 
