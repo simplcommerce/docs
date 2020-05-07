@@ -2,24 +2,20 @@ site_name: SimplCommerce Docs
 theme: readthedocs
 repo_url: https://github.com/simplcommerce/docs
 google_analytics: ['UA-78132767-3', 'docs.simplcommerce.com']
-nav:
-    - Home: index.md
-    - User Guide:
-        - Site configuration: user-guide/site-configuration.md
-    - Developers Guide:
-        - Introduction: index.md
-        - Getting started: getting-started.md
-        - Working with different databases: working-with-databases.md
-        - Internal structure of a module: internal-structure-of-a-module.md
-        - How to add new modules: how-to-add-new-modules.md
-        - Development tips: development-tips.md
-        - Token authentication for API: token-authentication.md
-        - How to add new payment providers: how-to-add-new-payment-providers.md
-        - How to add new languages: how-to-add-new-languages.md
-        - Theme development: theme-development.md
-        - Widgets: widgets.md
-        - How to use StorageAmazonS3 module: amazon-s3.md
-        - Some notes for exporting PDF: notes-for-export-pdf.md
-        - Notes on EF Migration: notes-on-ef-migrations.md
+pages:
+- Introduction: index.md
+- Getting started: getting-started.md
+- Working with different databases: working-with-databases.md
+- Internal structure of a module: internal-structure-of-a-module.md
+- How to add new modules: how-to-add-new-modules.md
+- Development tips: development-tips.md
+- Token authentication for API: token-authentication.md
+- How to add new payment providers: how-to-add-new-payment-providers.md
+- How to add new languages: how-to-add-new-languages.md
+- Theme development: theme-development.md
+- Widgets: widgets.md
+- How to use StorageAmazonS3 module: amazon-s3.md
+- Some notes for exporting PDF: notes-for-export-pdf.md
+- Notes on EF Migration: notes-on-ef-migrations.md
 
 
