@@ -1,7 +1,8 @@
 site_name: SimplCommerce Docs
-theme: readthedocs
 repo_url: https://github.com/simplcommerce/docs
 google_analytics: ['UA-78132767-3', 'docs.simplcommerce.com']
+theme:
+    name: mkdocs
 nav:
     - Home: index.md
     - User Guide:
