@@ -1,0 +1,53 @@
+{
+  "metadata": [],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "user-guide/**.md",
+          "user-guide/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      },
+      {
+        "files": [
+          "developer-guide/**.md",
+          "developer-guide/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "dest": "_site",
+    "globalMetadata": {
+      "_appTitle": "SimplCommerce Docs",
+      "_appFooter": "© Copyright 2020 SimplCommerce",
+      "_appLogoPath": "images/Logo_SimplCommerce.png",
+      "_appFaviconPath": "img/favicon.ico",
+      "_enableSearch": true
+    },
+    "template": [
+      "default"
+    ],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
+  }
+}

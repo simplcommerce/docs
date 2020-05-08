@@ -1,7 +1,5 @@
 # Widgets
 
----
-
 A widget is a fragment of UI that can be easily added to predefined placeholders in the views. Currently SimpleCommerce support 3 widget zones (placeholders) all of them are in the home page. We will support more widget zone in the futures, you can also define your own zones.
 
 ## Steps to develop new widgets

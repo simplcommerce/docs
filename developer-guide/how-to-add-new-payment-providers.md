@@ -2,7 +2,7 @@
 
 ---
 
-The first thing you need to do is create a new module. See [how to add new module](how-to-add-new-modules) for more details
+The first thing you need to do is create a new module. See [how to add new module](how-to-add-new-modules.md) for more details
 
 Then, add a new record to the 'Payments_PaymentProvider' table
 

@@ -14,7 +14,7 @@ SimplCommerce is a simple, cross platform, modularized ecommerce system built on
 
 ## The architecture highlight
 
-![SimplCommerce](images/simplcommerce.png)
+![SimplCommerce](../images/simplcommerce.png)
 
 The application is divided into modules. Each module contains all the stuff for itself to run including Controllers, Services, Views and even static files. If a module is no longer need, you can simply just delete it by a single click.
 

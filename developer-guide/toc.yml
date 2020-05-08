@@ -1,0 +1,28 @@
+- name: Introduction
+  href: intro.md
+- name: Getting Started
+  href: getting-started.md
+- name: Working with databases
+  href: working-with-databases.md
+- name: Internal structure of a module
+  href: internal-structure-of-a-module.md
+- name: How to add new modules
+  href: how-to-add-new-modules.md
+- name: Development tips
+  href: development-tips.md
+- name: Token authentication for API
+  href: token-authentication.md
+- name: How to add new payment providers
+  href: how-to-add-new-payment-providers.md
+- name: How to add new languages
+  href: how-to-add-new-languages.md
+- name: Theme development
+  href: theme-development.md
+- name: Widgets
+  href: widgets.md
+- name: How to use StorageAmazonS3 module
+  href: amazon-s3.md
+- name: Some notes for exporting PDF
+  href: notes-for-export-pdf.md
+- name: Notes on EF Migration
+  href: notes-on-ef-migrations.md
