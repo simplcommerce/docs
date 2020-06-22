@@ -16,6 +16,10 @@
   href: how-to-add-new-payment-providers.md
 - name: How to add new languages
   href: how-to-add-new-languages.md
+- name: How to setup email using Smtp
+  href: how-to-setup-email-using-smtp.md
+- name: How to setup email using SendGrid
+  href: how-to-setup-email-using-sendgrid.md
 - name: Theme development
   href: theme-development.md
 - name: Widgets
