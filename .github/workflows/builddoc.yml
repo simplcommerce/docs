@@ -5,11 +5,16 @@ name: Build Docs
 on:
   push:
     branches: [ master ]
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+    - master
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     # The type of runner that the job will run on
     runs-on: ubuntu-18.04
 
@@ -38,3 +43,31 @@ jobs:
       env:
         BUILD_DIR: _site # docfx's default output directory is _site
         GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxheld83/ghpages
+   
+    # Publish to Azure static website
+    - name: Build And Deploy
+      id: builddeploy
+      uses: Azure/static-web-apps-deploy@v0.0.1-preview
+      with:
+        azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BRAVE_MEADOW_058529110 }}
+        repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
+        action: 'upload'
+        ###### Repository/Build Configurations - These values can be configured to match you app requirements. ######
+        # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig 
+        app_location: '/' # App source code path
+        api_location: 'api' # Api source code path - optional
+        app_artifact_location: '_site' # Built app content directory - optional
+        ###### End of Repository/Build Configurations ######
+  
+  
+  close_pull_request_job:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    name: Close Pull Request Job
+    steps:
+    - name: Close Pull Request
+      id: closepullrequest
+      uses: Azure/static-web-apps-deploy@v0.0.1-preview
+      with:
+        azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BRAVE_MEADOW_058529110 }}
+        action: 'close'    
