@@ -1,0 +1,443 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/docs/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "qb9wSbD/yTiq0Qmq2vrQlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/amazon-s3.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/amazon-s3.html",
+          "hash": "U8vz4H9Ljbj+gqhtpFl9Zw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/development-tips.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/development-tips.html",
+          "hash": "f6YvFlsBkwm+dpwjTlRUVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/getting-started.html",
+          "hash": "VaKVlfi9DcEAhF67HMwsuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/how-to-add-new-languages.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/how-to-add-new-languages.html",
+          "hash": "xuMr11HshSKzVIEwrhcvKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/how-to-add-new-modules.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/how-to-add-new-modules.html",
+          "hash": "3ooHAEj+RvO51o8OxdOFkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/how-to-add-new-payment-providers.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/how-to-add-new-payment-providers.html",
+          "hash": "JByGQ6UBjAmgtMG3RThkOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/how-to-setup-email-using-sendgrid.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/how-to-setup-email-using-sendgrid.html",
+          "hash": "1RCujSjLP5pfv/8BZlS0sQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/how-to-setup-email-using-smtp.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/how-to-setup-email-using-smtp.html",
+          "hash": "n6CoVtpmFAzQlruV2eQ38w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/index.html",
+          "hash": "VFICyD5ktacXWp41JxqWlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/internal-structure-of-a-module.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/internal-structure-of-a-module.html",
+          "hash": "3mpH4/1eLUof9egtqCbE0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/intro.html",
+          "hash": "OM8g/7ZDaJ6db+85ILK+Mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/notes-for-export-pdf.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/notes-for-export-pdf.html",
+          "hash": "Jf8h5JJoGU04AyDFI1mXUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/notes-on-ef-migrations.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/notes-on-ef-migrations.html",
+          "hash": "QjgJlBu53VCZc8v+Xcr9oA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/theme-development.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/theme-development.html",
+          "hash": "F/NMPVOpCdBxaRC68Bw7Eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "developer-guide/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/toc.html",
+          "hash": "VkL/QMjzkgpDUoGA3T1JfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/token-authentication.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/token-authentication.html",
+          "hash": "JnbZIP6vgVGoRM1MylXkMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/widgets.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/widgets.html",
+          "hash": "R2G7X1Eq63DLiRfIqx6fJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developer-guide/working-with-databases.md",
+      "output": {
+        ".html": {
+          "relative_path": "developer-guide/working-with-databases.html",
+          "hash": "VBo55SJv9xcfMPqRrEbBfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Logo_SimplCommerce.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Logo_SimplCommerce.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/copy-modules.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/copy-modules.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/module-internal.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/module-internal.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/simplcommerce.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/simplcommerce.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/taskrunner.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/taskrunner.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/traffic.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/traffic.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "6S6ebHcUWsHqZsLEy/OP1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "SG5TtqiF9hXeOB4xvGguLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "user-guide/configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "user-guide/configuration.html",
+          "hash": "2iMAND2hRsB6Rc0Dl2yXvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "user-guide/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "user-guide/intro.html",
+          "hash": "6oBDOHL98sFsMY5jAGk8EQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "user-guide/payment-settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "user-guide/payment-settings.html",
+          "hash": "PBKcMp/kdbq615ZElz8Ofg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "user-guide/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "user-guide/toc.html",
+          "hash": "6x5VcwE6QINim82AO3tlaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 22,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

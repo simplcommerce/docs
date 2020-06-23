@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Theme development | SimplCommerce Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Theme development | SimplCommerce Docs ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/Logo_SimplCommerce.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="theme-development">Theme development</h1>
+
+<hr>
+<p>It is very easy to develop a new theme in SimplCommerce. You don't need to install any thing to develop and test your theme. All you need is to download the latest release of SimplCommerce at <a href="https://github.com/simplcommerce/SimplCommerce/releases">https://github.com/simplcommerce/SimplCommerce/releases</a>. Depends on your OS,
+pick a Windows or Mac version, extract the zip file, run the app by click on SimplCommerce.WebHost.exe (Windows), or type the './SimplCommerce.WebHost' in the Terminal and hit Enter (Mac).</p>
+<p>Of course, you can run the full source code with .NET Core SDK for advanced debuging.</p>
+<h2 id="steps-to-create-a-new-theme">Steps to create a new theme</h2>
+<ul>
+<li>Create a folder SimplCommerce.WebHost/Themes/[YourThemeName]. The theme name should be in PascalCase, no spacing.</li>
+<li>Create a theme.json file in your newly created folder</li>
+</ul>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;YourThemeName&quot;,
+  &quot;fullName&quot;: &quot;YourThemeName&quot;,
+  &quot;displayName&quot;: &quot;Your theme name&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;
+}
+</code></pre>
+<ul>
+<li><p>In your theme folder, create Views/Shared/_Layout.cshtml, this is the layout of your theme. You can copy the existing _Layout.cshtml then modify it. You can add your custom style sheet or change the html structure.</p>
+</li>
+<li><p>If you want to change the html structure of some particular views. Then following the origin views' structure, create your own views in your theme folder. It will override the original one. Not overrided views will fallback to the origin views.  Please check out the SampleTheme.</p>
+</li>
+<li><p>Create a folder SimplCommerce.WebHost/wwwroot/themes/[YourThemeName], add your css, images,... there. Also add the screenshot of your view SimplCommerce.WebHost/wwwroot/themes/[YourThemeName]/[YourThemeName].png.</p>
+</li>
+<li><p>Login as admin, go to System --&gt; Themes. You will see your theme there. Click &quot;Preview&quot; to see how it looks like, and &quot;Use&quot; for others people can see it.</p>
+</li>
+<li><p>When your theme looks great, you can download it from the admin, apply it on the server or publish it in the <a href="http://marketplace.simplcommerce.com">marketplace</a></p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/simplcommerce/docs/blob/master/developer-guide/theme-development.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 SimplCommerce
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

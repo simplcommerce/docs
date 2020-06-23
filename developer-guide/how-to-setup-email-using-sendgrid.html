@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How to setup email using SendGrid | SimplCommerce Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="How to setup email using SendGrid | SimplCommerce Docs ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/Logo_SimplCommerce.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-setup-email-using-sendgrid">How to setup email using SendGrid</h1>
+
+<hr>
+<h3 id="1-uncomment-the-afterordercreatedsendemailhanlder-registration">1. Uncomment the AfterOrderCreatedSendEmailHanlder registration</h3>
+<p>In the Order module, open the ModuleInitializer.cs uncomment the following line</p>
+<pre><code class="lang-csharp">//services.AddTransient&lt;INotificationHandler&lt;AfterOrderCreated&gt;, AfterOrderCreatedSendEmailHanlder&gt;();
+</code></pre>
+<p>We are consider using feature flag. But it is for now</p>
+<h3 id="2-add-project-reference">2. Add project reference</h3>
+<p>In the SimplCommerce.WebHost.csproj add project reference to the SimplCommerce.Module.EmailSenderSendgrid module. And remove other email sender modules if any.</p>
+<h3 id="3-update-modulesjson">3. Update modules.json</h3>
+<p>Open the modules.json in WebHost then add module EmailSenderSendgrid</p>
+<pre><code class="lang-json">  {
+    &quot;id&quot;: &quot;SimplCommerce.Module.EmailSenderSendgrid&quot;,
+    &quot;isBundledWithHost&quot;: true,
+    &quot;version&quot;: &quot;1.0.0&quot;
+  }
+</code></pre>
+<p>Remove the other email sender modules if any</p>
+<h3 id="4-add-configuration-for-emailsendersendgrid-module">4. Add configuration for EmailSenderSendgrid module</h3>
+<p>In the appsettings.json add the following setting. Update the settings values to your</p>
+<pre><code class="lang-json">  &quot;SendGrid&quot;: {
+    &quot;ApiKey&quot;: &quot;Your Send Grid API Key&quot;,
+    &quot;FromEmail&quot;: &quot;no-reply@simplcommerce.com&quot;,
+    &quot;FromName&quot;: &quot;SimplCommerce&quot;
+  }
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/simplcommerce/docs/blob/master/developer-guide/how-to-setup-email-using-sendgrid.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 SimplCommerce
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

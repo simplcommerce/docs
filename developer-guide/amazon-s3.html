@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How to use StorageAmazonS3 module | SimplCommerce Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="How to use StorageAmazonS3 module | SimplCommerce Docs ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/Logo_SimplCommerce.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-use-storageamazons3-module">How to use StorageAmazonS3 module</h1>
+
+<hr>
+<p>You can easily make SimplCommerce using Amazon S3 to store and serve media like product images, category images,..</p>
+<h2 id="prepare-the-bucket">Prepare the bucket</h2>
+<p>Login to aws console and create a bucket.</p>
+<h2 id="add-configuration">Add configuration.</h2>
+<p>Add the following configuration below to the appsettings.json</p>
+<pre><code class="lang-json">  &quot;AWS&quot;: {
+    &quot;S3&quot;: {
+      &quot;RegionEndpointName&quot;: &quot;&lt;Region name&gt;&quot;,
+      &quot;AccessKeyId&quot;: &quot;&lt;Your access key&gt;&quot;,
+      &quot;SecretAccessKey&quot;: &quot;&lt;Your secret key&gt;&quot;,
+      &quot;BucketName&quot;: &quot;&lt;Your bucket name&gt;&quot;,
+      &quot;PublicEndpoint&quot; &lt;Optional &gt;
+    }
+  }
+</code></pre>
+<p>Then update the these configuration values according to your aws settings. For use in production, we recommend that the bucket should be served via CloudFront CDN. Then in that case, add your cloudfront domain to the PublicEndpoint.</p>
+<p>Note: If you like you can add these setting to the Core_AppSettings table instead.</p>
+<h2 id="active-storageamazons3-module">Active StorageAmazonS3 module</h2>
+<p>By default, simplcommerce using StorageLocal module and store the media in the local folder SimplCommerce.WebHost\wwwroot\user-content.</p>
+<p>The current workaround is:</p>
+<p>In the SimplCommerce.WebHost.csproj replace</p>
+<pre><code class="lang-xml">&lt;ProjectReference Include=&quot;..\Modules\SimplCommerce.Module.StorageLocal\SimplCommerce.Module.StorageLocal.csproj&quot; /&gt;
+</code></pre>
+<p>by</p>
+<pre><code class="lang-xml">&lt;ProjectReference Include=&quot;..\Modules\SimplCommerce.Module.StorageAmazonS3\SimplCommerce.Module.StorageAmazonS3.csproj&quot; /&gt;
+</code></pre>
+<p>And also replace the module SimplCommerce.Module.StorageLocal to SimplCommerce.Module.StorageAmazonS3 in modules.json in the WebHost</p>
+<ul>
+<li>Build the solution then enjoy.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/simplcommerce/docs/blob/master/developer-guide/amazon-s3.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 SimplCommerce
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

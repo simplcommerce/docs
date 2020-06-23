@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting Started | SimplCommerce Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting Started | SimplCommerce Docs ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/Logo_SimplCommerce.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting Started</h1>
+
+<hr>
+<h2 id="docker">Docker</h2>
+<p>For testing purpose only <code>docker run -p 5000:80 simplcommerce/ci-build</code></p>
+<h2 id="visual-studio-2017-and-sql-server">Visual Studio 2017 and SQL Server</h2>
+<h4 id="prerequisites">Prerequisites</h4>
+<ul>
+<li>SQL Server</li>
+<li><a href="https://www.microsoft.com/net/download/all">Latest visual Studio 2019 (version &gt;= 16.4) with .NET Core SDK 3.1</a></li>
+</ul>
+<h4 id="steps-to-run">Steps to run</h4>
+<ul>
+<li>Update the connection string in appsettings.json in SimplCommerce.WebHost</li>
+<li>Build whole solution.</li>
+<li>Make sure your startup project is SimplCommerce.Webhost(Right-click on SimpleCommerce.Webhost and select &quot;Set as startup project&quot;).     Otherwise the next step will fail with a dbcontext missing error.</li>
+<li>Open Package Manager Console Window and type &quot;Update-Database&quot; then press &quot;Enter&quot;. This action will create database schema.</li>
+<li>In Visual Studio, press &quot;Control + F5&quot;.</li>
+<li>The back-office can access via /Admin using the pre-created account: admin@simplcommerce.com, 1qazZAQ!</li>
+</ul>
+<h2 id="maclinux-with-postgresql">Mac/Linux with PostgreSQL</h2>
+<h4 id="prerequisite">Prerequisite</h4>
+<ul>
+<li>PostgreSQL</li>
+<li><a href="https://www.microsoft.com/net/download/all">.NET Core SDK 3.1</a></li>
+</ul>
+<h4 id="steps-to-run-1">Steps to run</h4>
+<ul>
+<li>Update the connection string in appsettings.json in SimplCommerce.WebHost.</li>
+<li>Run file &quot;sudo ./simpl-build.sh&quot;.</li>
+<li>In the terminal, navigate to the &quot;src/SimplCommerce.WebHost&quot; type &quot;dotnet run&quot; and hit &quot;Enter&quot;.</li>
+<li>Open browser, open http://localhost:5000. The back-office can access via /Admin using the pre-created account: admin@simplcommerce.com, 1qazZAQ!</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/simplcommerce/docs/blob/master/developer-guide/getting-started.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 SimplCommerce
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
